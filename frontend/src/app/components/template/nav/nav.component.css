@@ -1,0 +1,28 @@
+.container{
+
+    display: flex;
+}
+
+.sidenav{
+
+    background-color: rgb(212, 209, 209);
+    width: 230px;
+}
+
+.sidenav i{
+
+    padding-right: 10px;
+}
+
+a{
+
+    transition: 0.3s;
+}
+
+a:hover{
+
+    background-color: rgb(219, 139, 143);
+    color: white;
+    font-weight: 500;
+}
+

@@ -1,0 +1,39 @@
+.header{
+
+    display: flex;
+    height: 70px;
+    background-color: rgb(204, 74, 81);
+    justify-content: flex-start;
+    color: white;
+    align-items: center;
+    box-shadow: 1px 1px 8px gray;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+img{
+
+    max-height: 70px;
+}
+
+.header a{
+
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 28px;
+    font-weight: lighter;
+    margin-left: 20px;
+}
+
+.header .title-group {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 25px;
+}
