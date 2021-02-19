@@ -9,15 +9,21 @@ import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
 import {MatToolbarModule} from '@angular/material/toolbar'
 import {MatSidenavModule} from '@angular/material/sidenav'
-import {MatListModule} from '@angular/material/list'
-
+import {MatListModule} from '@angular/material/list';
+import {MatInputModule} from '@angular/material/input'
+import { HomeComponent } from './views/home/home.component'
+import {MatCardModule} from '@angular/material/card';
+import { ProdutosComponent } from './views/produtos/produtos.component';
+import {MatButtonModule} from '@angular/material/button'
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NavComponent
+    NavComponent,
+    HomeComponent,
+    ProdutosComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,7 +31,10 @@ import {MatListModule} from '@angular/material/list'
     BrowserAnimationsModule,
     MatToolbarModule,
     MatListModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatCardModule,
+    MatInputModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

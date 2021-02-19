@@ -1,0 +1,12 @@
+.formulario{
+
+    background-color: #222;
+    padding: 20px;
+    border-radius: 12px;
+    width: 400px;
+}
+
+.formulario span{
+
+    float: right;
+}

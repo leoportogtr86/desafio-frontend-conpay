@@ -30,3 +30,12 @@ a:hover{
     font-weight: 500;
 }
 
+.content{
+
+    padding: 16px;
+    background-color: white;
+    width: 80%;
+    box-shadow: 1px 1px 8px gray;
+
+}
+

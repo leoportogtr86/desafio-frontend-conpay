@@ -5,12 +5,12 @@
 
         <mat-nav-list class="nav-list red">
 
-            <a mat-list-item class="red">
+            <a mat-list-item class="red" routerLink="/">
                 <i class="material-icons red">home</i>
                 Início
             </a>
 
-            <a mat-list-item class="red">
+            <a mat-list-item class="red" routerLink="/produtos">
                 <i class="material-icons red">view_list</i>
                 Produtos
             </a>
@@ -28,4 +28,14 @@
 
 
     </mat-sidenav>
+
+    <mat-sidenav-content class="content">
+
+
+        <router-outlet> </router-outlet>
+
+
+    </mat-sidenav-content>
+
+
 </mat-sidenav-container>
