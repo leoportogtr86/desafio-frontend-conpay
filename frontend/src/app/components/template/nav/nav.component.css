@@ -5,8 +5,12 @@
 
 .sidenav{
 
-    background-color: rgb(83, 82, 82);
+    background-color: #222;
     width: 230px;
+    box-shadow: 1px 1px 8px gray;
+
+    
+
 }
 
 .sidenav i{

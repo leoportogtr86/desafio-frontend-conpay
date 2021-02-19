@@ -7,7 +7,7 @@ Este projeto foi construído com o objetivo de cumprir o desafio técnico no pro
 [Especificações do Desafio](/desafio/Desafio%20técnico%20-%20Desenvolvedor%20Front-end.pdf)
 
 
-## Tecnologias
+## 🛠️ Tecnologias
 
 - Para a criação da interface foi usado o framework javascript **Angular**.
 - A linguagem usada foi **javascript/typescript**.
@@ -15,19 +15,19 @@ Este projeto foi construído com o objetivo de cumprir o desafio técnico no pro
 - Estilização com **css** e **Material design (angular/material)**
 
 
-## Clonando o projeto
+## ✂️ 📋 👌Clonando o projeto
 
     git clone https://github.com/leoportogtr86/desafio-frontend-conpay.git
 
 
-## Instalação do frontend
+##  ⚙️ Instalação do frontend
 
 Dentro do diretório **frontend**, rodar o comando:
 
     npm install
 
 
-## Rodando a aplicação (frontend) 
+## ▶️ Rodando a aplicação (frontend) 
 
 
 Dentro do diretório **frontend**, rodar o comando:
@@ -40,13 +40,13 @@ ou
 
 
 
-## O backend...
+## 🛠 O backend...
 
 Para nível de testes da aplicação no frontend, criou-se um backend simplificado com json-server apenas para prover alguns recursos fictícios.
 
 
 
-## Instalando o backend
+## ⚙️  Instalando o backend
 
 
 
@@ -55,7 +55,7 @@ Dentro do diretório **backend**, rodar o comando:
     npm install
 
 
-## Rodando a aplicação (backend) 
+## ▶️ Rodando a aplicação (backend) 
 
 
 Dentro do diretório **backend**, rodar o comando:
