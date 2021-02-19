@@ -17,4 +17,47 @@ Este projeto foi construído com o objetivo de cumprir o desafio técnico no pro
 
 ## Clonando o projeto
 
-![](https://github.com/leoportogtr86/desafio-frontend-conpay/blob/master/readme-img/clone.png)
+    git clone https://github.com/leoportogtr86/desafio-frontend-conpay.git
+
+
+## Instalação do frontend
+
+Dentro do diretório **frontend**, rodar o comando:
+
+    npm install
+
+
+## Rodando a aplicação (frontend) 
+
+
+Dentro do diretório **frontend**, rodar o comando:
+
+    npm start
+
+ou
+
+    ng serve
+
+
+
+## O backend...
+
+Para nível de testes da aplicação no frontend, criou-se um backend simplificado com json-server apenas para prover alguns recursos fictícios.
+
+
+
+## Instalando o backend
+
+
+
+Dentro do diretório **backend**, rodar o comando:
+
+    npm install
+
+
+## Rodando a aplicação (backend) 
+
+
+Dentro do diretório **backend**, rodar o comando:
+
+    npm start
