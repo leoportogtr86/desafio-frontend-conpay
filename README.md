@@ -4,6 +4,6 @@
 
 
 
-[Especificações do Desafio]('/../desafio/Desafio%20técnico%20-%20Desenvolvedor%20Front-end.pdf')
+[Especificações do Desafio](/desafio/Desafio%20técnico%20-%20Desenvolvedor%20Front-end.pdf)
 
 
