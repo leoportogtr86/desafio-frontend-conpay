@@ -17,4 +17,4 @@ Este projeto foi construído com o objetivo de cumprir o desafio técnico no pro
 
 ## Clonando o projeto
 
-!()[https://github.com/leoportogtr86/desafio-frontend-conpay/blob/master/readme-img/clone.png]
+![](https://github.com/leoportogtr86/desafio-frontend-conpay/blob/master/readme-img/clone.png)
