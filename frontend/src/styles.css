@@ -20,3 +20,20 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; height: 100
 
     vertical-align: bottom;
 }
+
+.row{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+
+.col{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

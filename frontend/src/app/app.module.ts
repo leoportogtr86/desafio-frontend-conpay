@@ -14,7 +14,11 @@ import {MatInputModule} from '@angular/material/input'
 import { HomeComponent } from './views/home/home.component'
 import {MatCardModule} from '@angular/material/card';
 import { ProdutosComponent } from './views/produtos/produtos.component';
-import {MatButtonModule} from '@angular/material/button'
+import {MatButtonModule} from '@angular/material/button';
+import { CheckoutComponent } from './views/checkout/checkout.component'
+import {MatFormFieldModule} from '@angular/material/form-field'
+import {MatSelectModule} from '@angular/material/select'
+
 
 @NgModule({
   declarations: [
@@ -24,6 +28,7 @@ import {MatButtonModule} from '@angular/material/button'
     NavComponent,
     HomeComponent,
     ProdutosComponent,
+    CheckoutComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +39,9 @@ import {MatButtonModule} from '@angular/material/button'
     MatSidenavModule,
     MatCardModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    MatFormFieldModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
