@@ -1,16 +1,15 @@
 <ul>
-    <li>
+    <li *ngFor="let produto of produtos">
         <div class="card">
 
 
-            <img src="https://img-b.udemycdn.com/course/240x135/2571422_4a78.jpg?secure=QdrJ7tA040lk22J0W_HGPA%3D%3D%2C1613977380"
-                alt="">
+            <img [src]="produto.image" alt="">
 
 
             <div class="card-body">
 
-                <h2 class="card-title">Teste de Aplicações Modernas com Cypress</h2>
-                <h5 class="card-subtitle">Curso de testes automatiados de backend e frontend com cypress.</h5>
+                <h2 class="card-title">{{produto.name}}</h2>
+                <h5 class="card-subtitle">{{produto.details}}</h5>
 
             </div>
 
@@ -24,7 +23,7 @@
             <div class="price">
                 <span>
                     <a>
-                        R$ 345,99
+                        R$ {{produto.price}}
                         <i class="material-icons v-middle ">sell</i>
                     </a>
 
@@ -34,143 +33,4 @@
 
     </li>
 
-    <li>
-        <div class="card">
-
-
-            <img src="https://img-b.udemycdn.com/course/240x135/2571422_4a78.jpg?secure=QdrJ7tA040lk22J0W_HGPA%3D%3D%2C1613977380"
-                alt="">
-
-
-            <div class="card-body">
-
-                <h2 class="card-title">Teste de Aplicações Modernas com Cypress</h2>
-                <h5 class="card-subtitle">Curso de testes automatiados de backend e frontend com cypress.</h5>
-
-            </div>
-
-            <div class="carrinho-actions">
-
-                <p>Remover</p>
-                <p>Adicionar ao carrinho</p>
-
-            </div>
-
-            <div class="price">
-                <span>
-                    <a>
-                        R$ 345,99
-                        <i class="material-icons v-middle ">sell</i>
-                    </a>
-
-                </span>
-            </div>
-        </div>
-
-    </li>
-
-    <li>
-        <div class="card">
-
-
-            <img src="https://img-b.udemycdn.com/course/240x135/2571422_4a78.jpg?secure=QdrJ7tA040lk22J0W_HGPA%3D%3D%2C1613977380"
-                alt="">
-
-
-            <div class="card-body">
-
-                <h2 class="card-title">Teste de Aplicações Modernas com Cypress</h2>
-                <h5 class="card-subtitle">Curso de testes automatiados de backend e frontend com cypress.</h5>
-
-            </div>
-
-            <div class="carrinho-actions">
-
-                <p>Remover</p>
-                <p>Adicionar ao carrinho</p>
-
-            </div>
-
-            <div class="price">
-                <span>
-                    <a>
-                        R$ 345,99
-                        <i class="material-icons v-middle ">sell</i>
-                    </a>
-
-                </span>
-            </div>
-        </div>
-
-    </li>
-
-    <li>
-        <div class="card">
-
-
-            <img src="https://img-b.udemycdn.com/course/240x135/2571422_4a78.jpg?secure=QdrJ7tA040lk22J0W_HGPA%3D%3D%2C1613977380"
-                alt="">
-
-
-            <div class="card-body">
-
-                <h2 class="card-title">Teste de Aplicações Modernas com Cypress</h2>
-                <h5 class="card-subtitle">Curso de testes automatiados de backend e frontend com cypress.</h5>
-
-            </div>
-
-            <div class="carrinho-actions">
-
-                <p>Remover</p>
-                <p>Adicionar ao carrinho</p>
-
-            </div>
-
-            <div class="price">
-                <span>
-                    <a>
-                        R$ 345,99
-                        <i class="material-icons v-middle ">sell</i>
-                    </a>
-
-                </span>
-            </div>
-        </div>
-
-    </li>
-
-    <li>
-        <div class="card">
-
-
-            <img src="https://img-b.udemycdn.com/course/240x135/2571422_4a78.jpg?secure=QdrJ7tA040lk22J0W_HGPA%3D%3D%2C1613977380"
-                alt="">
-
-
-            <div class="card-body">
-
-                <h2 class="card-title">Teste de Aplicações Modernas com Cypress</h2>
-                <h5 class="card-subtitle">Curso de testes automatiados de backend e frontend com cypress.</h5>
-
-            </div>
-
-            <div class="carrinho-actions">
-
-                <p>Remover</p>
-                <p>Adicionar ao carrinho</p>
-
-            </div>
-
-            <div class="price">
-                <span>
-                    <a>
-                        R$ 345,99
-                        <i class="material-icons v-middle ">sell</i>
-                    </a>
-
-                </span>
-            </div>
-        </div>
-
-    </li>
 </ul>
