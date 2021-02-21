@@ -37,7 +37,7 @@ export class CardproductComponent implements OnInit {
 
     {
        name:"Headphone",
-       details:"arshall -  OVER-EAR",
+       details:"Marshall -  OVER-EAR",
        price:1200,
        image:"https://marshalldotcom.blob.core.windows.net/assets/content/uploads/7770f0dc-963f-4d41-baa2-d8f883e4f6de.jpg?20190509152320"
     }
