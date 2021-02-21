@@ -29,7 +29,8 @@ export class ProductComponent implements OnInit {
 
     console.log('digitando...')
     console.log(this.nome_produto)
-    console.log((<HTMLInputElement>res.target).value)
+    this.nome_produto = (<HTMLInputElement>res.target).value
+    console.log(this.nome_produto)
   }
 
 }

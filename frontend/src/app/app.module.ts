@@ -22,6 +22,7 @@ import { CardformComponent } from './components/cardform/cardform.component';
 import { ProductComponent } from './components/product/product.component';
 import {ProductService} from './components/product/product.service';
 import { CardproductComponent } from './components/cardproduct/cardproduct.component'
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { CardproductComponent } from './components/cardproduct/cardproduct.compo
     MatButtonModule,
     MatFormFieldModule,
     MatSelectModule,
+    HttpClientModule
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]

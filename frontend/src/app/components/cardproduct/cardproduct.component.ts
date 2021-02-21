@@ -1,3 +1,4 @@
+import { ProductService } from './../product/product.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,10 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardproductComponent implements OnInit {
 
-  // name: string = "Guitar"
-  // details: string = "Suhr - Scott Henderson Signature"
-  // price: number =  3495
-  // image: string = "https://www.suhr.com/wp-content/uploads/SKU/01-SIG-0001.jpg"
+  
 
   produtos = [
 
@@ -47,9 +45,11 @@ export class CardproductComponent implements OnInit {
 
 
 
-  constructor() { }
+  constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
   }
+
+  
 
 }
