@@ -2,7 +2,7 @@
 
     <mat-form-field>
         <mat-label>Buscar Produto</mat-label>
-        <input matInput placeholder="buscar produto..." />
+        <input matInput placeholder="buscar produto..." (input)="digitar($event)" />
     </mat-form-field>
     <span>
         <a>

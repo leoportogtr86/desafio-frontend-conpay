@@ -10,8 +10,11 @@ export class ProductComponent implements OnInit {
 
 
   texto: string = ''
+  nome_produto = ''
 
   constructor(private product: ProductService) { 
+
+    
 
 
     this.texto = this.product.getProducts()
@@ -19,6 +22,14 @@ export class ProductComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+
+  digitar(res: Event): void{
+
+    console.log('digitando...')
+    console.log(this.nome_produto)
+    console.log((<HTMLInputElement>res.target).value)
   }
 
 }

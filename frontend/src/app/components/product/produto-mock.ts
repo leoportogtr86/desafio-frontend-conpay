@@ -2,7 +2,7 @@ import {Produto} from '../../shared/produto.model'
 
 
 
-const PRODUTOS: Produto[] = [
+export const PRODUTOS: Produto[] = [
 
  {
       id: 1,
