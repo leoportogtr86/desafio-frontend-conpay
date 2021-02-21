@@ -49,3 +49,24 @@ h2{
     text-align: center;
     display: block;
 }
+
+.search{
+
+    display: flex;
+    position: relative;
+}
+
+.search-icon{
+
+    position: absolute;
+    right: 10px;
+}
+
+
+
+.carrinho-icon{
+
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,35 @@
+
+
+
+
+
+.title{
+
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+
+
+.form{
+
+    width: 97%;
+    box-shadow: 2px 2px 12px gray;
+    border-radius: 7px;
+    padding: 20px;
+    background-color: #222;
+    margin-bottom: 5px;
+    z-index: 0;
+}
+
+
+.nome{
+
+    width: 90%;
+}
+
+.form-field{
+
+    margin-left: 20px;
+}

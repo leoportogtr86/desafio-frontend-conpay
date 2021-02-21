@@ -1,0 +1,127 @@
+<div class="form">
+    <h2>Dados do Pagador</h2>
+
+    <mat-form-field class="form-field">
+
+        <mat-label>Nome completo</mat-label>
+        <input class="nome" matInput placeholder="Nome completo" type="text">
+
+    </mat-form-field>
+
+    <div class="row">
+
+        <mat-form-field class="form-field">
+
+            <mat-label>CPF/CNPJ</mat-label>
+            <input class="cpf" matInput placeholder="CPF/CNPJ" type="text">
+
+        </mat-form-field>
+
+        <mat-form-field class="form-field">
+
+            <mat-label>Data Nascimento</mat-label>
+            <input class="nascimento" matInput placeholder="Data Nascimento" type="date">
+
+        </mat-form-field>
+
+
+    </div>
+
+    <div class="row">
+
+        <mat-form-field class="form-field">
+
+            <mat-label>Email</mat-label>
+            <input class="email" matInput placeholder="Email" type="email">
+
+        </mat-form-field>
+
+        <mat-form-field class="form-field">
+
+            <mat-label>Telefone</mat-label>
+            <input class="telefone" matInput placeholder="Telefone" type="tel">
+
+        </mat-form-field>
+
+
+    </div>
+
+
+    <div class="row">
+
+        <mat-form-field class="form-field">
+
+            <mat-label>Endereço</mat-label>
+            <input class="endereço" matInput placeholder="Endereço" type="text">
+
+        </mat-form-field>
+
+
+
+    </div>
+
+</div>
+
+
+
+<div class="form">
+    <h2>Dados do Cartão</h2>
+
+
+
+    <div class="row">
+
+        <mat-form-field class="form-field">
+
+            <mat-label>Número do cartão</mat-label>
+            <input class="numero-cartao" matInput placeholder="Número do cartão" type="text">
+
+        </mat-form-field>
+
+        <mat-form-field class="form-field">
+
+            <mat-label>Validade</mat-label>
+            <input class="validade" matInput placeholder="Validade" type="date">
+
+        </mat-form-field>
+
+
+    </div>
+
+    <div class="row">
+
+        <mat-form-field class="form-field">
+
+            <mat-label>Nome impresso no cartão</mat-label>
+            <input class="nome-cartao" matInput placeholder="Nome impresso no cartão" type="text">
+
+        </mat-form-field>
+
+        <mat-form-field class="form-field">
+
+            <mat-label>Código de segurança (CVV)</mat-label>
+            <input class="codigo" matInput placeholder="Código de segurança (CVV)" type="text">
+
+        </mat-form-field>
+
+
+    </div>
+
+    <mat-form-field class="form-field">
+
+
+        <mat-label>Parcelas</mat-label>
+        <mat-select>
+
+            <mat-option *ngFor="let parcela of parcelas" [value]="parcelas">
+
+                {{ parcela }}
+            </mat-option>
+
+
+        </mat-select>
+    </mat-form-field>
+
+
+
+</div>
