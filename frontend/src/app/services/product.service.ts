@@ -1,11 +1,15 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import {Produto} from '../models/produto.model'
+
 
 @Injectable({
 
   providedIn: "root"
 })
+
+
+
 export class ProductService {
 
 
@@ -51,9 +55,11 @@ export class ProductService {
   }
 
 
-  getProducts(){
+  getProducts() {
 
-    return this.produtos
+    // return this.produtos
+
+    
 
    
   }
