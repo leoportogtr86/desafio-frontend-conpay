@@ -85,3 +85,26 @@ img{
 
     width: 250px;
 }
+
+.quantidade{
+
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+.quantidade i:hover{
+
+    background-color:  rgb(204, 74, 81);
+    color: white;
+}
+
+i{
+
+    margin-left: 5px;
+    border-radius: 12px;
+}
+

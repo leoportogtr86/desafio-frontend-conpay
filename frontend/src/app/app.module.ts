@@ -24,6 +24,9 @@ import { HomeComponent } from './views/home/home.component'
 import { HeaderComponent } from './components/template/header/header.component';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
+import {CarrinhoService} from './services/carrinho.service'
+import {AuthenticationService} from './services/authentication.service'
+import {AuthorizationService} from './services/authorization.service'
 
 
 
@@ -54,7 +57,7 @@ import { NavComponent } from './components/template/nav/nav.component';
     MatSelectModule,
     HttpClientModule
   ],
-  providers: [ProductService],
+  providers: [ProductService, CarrinhoService, AuthenticationService, AuthorizationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,5 +1,6 @@
 import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 import {Produto} from '../models/produto.model'
 
 
@@ -55,9 +56,11 @@ export class ProductService {
   }
 
 
-  getProducts() {
+  getProducts(): Observable<Produto[]> {
 
     // return this.produtos
+
+    return this.http.get<Produto[]>(this.url)
 
     
 

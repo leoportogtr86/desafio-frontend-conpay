@@ -21,9 +21,18 @@ export class CardProductComponent implements OnInit {
 
 
 
+
+
   }
 
   ngOnInit(): void {
+
+    this.productService.getProducts().subscribe((res)=>{
+
+      this.produtos = res
+    })
+
+
 
 
   }
