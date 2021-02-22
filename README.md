@@ -10,7 +10,7 @@ Este projeto foi construído com o objetivo de cumprir o desafio técnico no pro
 ## 🛠️ Tecnologias
 
 - Para a criação da interface foi usado o framework javascript **Angular**.
-- A linguagem usada foi **javascript/typescript**.
+- A linguagem usada foi **typescript**.
 - Templates com **html**.
 - Estilização com **css** e **Material design (angular/material)**
 
