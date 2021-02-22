@@ -1,16 +1,17 @@
 import { ProductService } from './../product/product.service';
 import { Component, OnInit } from '@angular/core';
+import {Produto} from '../../shared/produto.model'
 
 @Component({
-  selector: 'app-cardproduct',
-  templateUrl: './cardproduct.component.html',
-  styleUrls: ['./cardproduct.component.css']
+  selector: 'app-card-product',
+  templateUrl: './card-product.component.html',
+  styleUrls: ['./card-product.component.css']
 })
-export class CardproductComponent implements OnInit {
+export class CardProductComponent implements OnInit {
 
   
 
-  produtos = [
+  produtos =  [
 
     {
        name:"Guitar",
@@ -45,10 +46,18 @@ export class CardproductComponent implements OnInit {
 
 
 
-  constructor(private productService: ProductService) { }
+  constructor(private productService: ProductService) { 
+
+
+
+  }
 
   ngOnInit(): void {
   }
+
+
+
+  
 
   
 

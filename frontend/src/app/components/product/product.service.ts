@@ -2,7 +2,10 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import {Produto} from '../../shared/produto.model'
 
-@Injectable()
+@Injectable({
+
+  providedIn: "root"
+})
 export class ProductService {
 
 
@@ -12,20 +15,18 @@ export class ProductService {
 
   constructor(private http: HttpClient) { 
 
+  }
+
+  getProducts(){
+
+    
     this.http.get(this.url)
         .subscribe((res)=>{
 
           console.log(res)
           
+          
 
         })
-  }
-
-
-
-
-  getProducts(){
-
-    return 'produtos...'
   }
 }

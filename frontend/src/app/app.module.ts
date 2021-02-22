@@ -18,11 +18,13 @@ import {MatButtonModule} from '@angular/material/button';
 import { CheckoutComponent } from './views/checkout/checkout.component'
 import {MatFormFieldModule} from '@angular/material/form-field'
 import {MatSelectModule} from '@angular/material/select';
-import { CardformComponent } from './components/cardform/cardform.component';
 import { ProductComponent } from './components/product/product.component';
 import {ProductService} from './components/product/product.service';
-import { CardproductComponent } from './components/cardproduct/cardproduct.component'
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { CardFormComponent } from './components/card-form/card-form.component';
+import {CardProductComponent} from '../app/components/card-product/card-product.component'
+
+
 
 @NgModule({
   declarations: [
@@ -33,9 +35,9 @@ import {HttpClientModule} from '@angular/common/http'
     HomeComponent,
     ProdutosComponent,
     CheckoutComponent,
-    CardformComponent,
     ProductComponent,
-    CardproductComponent,
+    CardFormComponent,
+    CardProductComponent,
   ],
   imports: [
     BrowserModule,

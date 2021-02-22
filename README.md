@@ -36,7 +36,7 @@ Dentro do diretório **frontend**, rodar o comando:
 
 ou
 
-    ng serve
+    ng serve --open
 
 
 

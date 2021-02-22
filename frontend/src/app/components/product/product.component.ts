@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from './product.service';
+import {Produto} from '../../shared/produto.model'
 
 @Component({
   selector: 'app-product',
@@ -9,28 +10,23 @@ import { ProductService } from './product.service';
 export class ProductComponent implements OnInit {
 
 
-  texto: string = ''
-  nome_produto = ''
+  
 
-  constructor(private product: ProductService) { 
-
-    
-
-
-    this.texto = this.product.getProducts()
+  constructor(private product: ProductService) {     
 
   }
 
   ngOnInit(): void {
   }
 
+  mostrarProduto(): void{
 
-  digitar(res: Event): void{
+    console.log(this.product.getProducts())
 
-    console.log('digitando...')
-    console.log(this.nome_produto)
-    this.nome_produto = (<HTMLInputElement>res.target).value
-    console.log(this.nome_produto)
+
   }
+
+
+  
 
 }
