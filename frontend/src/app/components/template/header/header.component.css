@@ -9,8 +9,9 @@
     box-shadow: 1px 1px 8px gray;
     top: 0;
     width: 100%;
-    position: sticky;
+    position: fixed;
     z-index: 1000;
+    margin-bottom: 20px;
     
 }
 

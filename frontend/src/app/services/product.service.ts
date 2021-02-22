@@ -14,7 +14,7 @@ import {Produto} from '../models/produto.model'
 export class ProductService {
 
 
-  url: string = "http://localhost:8080/products"
+  url: string = "http://localhost:8080/products/"
 
 
 
