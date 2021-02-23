@@ -121,3 +121,17 @@ i{
     border: 1px solid gray;
     border-radius: 7px;
 }
+
+.form{
+
+    background-color: #222;
+    padding: 20px;
+    border-radius: 12px;
+    width: 400px;
+    margin-top: 70px;
+}
+
+.form span{
+
+    float: right;
+}

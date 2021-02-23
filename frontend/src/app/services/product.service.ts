@@ -30,6 +30,12 @@ export class ProductService {
    
   }
 
+  getProductsByName(name: string): Observable<Produto[]>{
+
+    return this.http.get<Produto[]>(`${this.url}/?name=${name}`)
+
+  }
+
   
 
   

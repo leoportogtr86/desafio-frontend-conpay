@@ -12,11 +12,6 @@ export class AuthorizationService {
 
   autorizar(){
 
-    return this.http.post('https://sandbox.conpay.com.br/ecommerce/charges/charge',{
-
-        accessKeyId: "f9f3baae53d7490dbde09f223b820714",
-        secretKey: "$Z<;8[ny!4hBM8::"
-
-    })
+    
   }
 }

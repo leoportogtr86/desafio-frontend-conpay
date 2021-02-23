@@ -10,6 +10,9 @@ import {Produto} from '../../models/produto.model'
 export class ProductComponent implements OnInit {
 
 
+
+  // nomeProduto: string = ''
+
   
 
   constructor(private product: ProductService) {     
@@ -21,11 +24,13 @@ export class ProductComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  buscar(res: Event): void{
+  // buscar(res: Event): void{
 
-    console.log((<HTMLInputElement>res.target).value)
 
-  }
+  //   this.nomeProduto = (<HTMLInputElement>res.target).value 
+
+
+  // }
 
   
 

@@ -15,6 +15,7 @@ import { Produto } from './../../models/produto.model';
 export class CardProductComponent implements OnInit {
 
 
+  nomeProduto: string = ''
 
   
 
@@ -27,7 +28,6 @@ export class CardProductComponent implements OnInit {
 
 
 
-
   }
 
   ngOnInit(): void {
@@ -35,11 +35,24 @@ export class CardProductComponent implements OnInit {
     this.productService.getProducts().subscribe((res)=>{
 
       this.produtos = res
+      console.log(res)
+    })    
+
+
+
+
+  }
+
+  buscar(res: Event): void{
+
+
+    this.nomeProduto = (<HTMLInputElement>res.target).value 
+
+    this.productService.getProductsByName((<HTMLInputElement>res.target).value).subscribe((res)=>{
+      this.produtos = res
+
+
     })
-
-    
-
-
 
 
   }
