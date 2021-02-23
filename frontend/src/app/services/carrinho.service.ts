@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 
-import {Carrinho} from '../models/carrinho.model'
+import {ItemCarrinho} from '../models/item-carrinho.model'
+
 
 
 @Injectable({
@@ -8,7 +9,10 @@ import {Carrinho} from '../models/carrinho.model'
 })
 export class CarrinhoService {
 
-  carrinho: Carrinho[] = []
+
+
+
+  itemCarrinho: ItemCarrinho[] = []
 
   constructor() { }
 }

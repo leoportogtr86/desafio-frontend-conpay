@@ -1,7 +1,7 @@
+import { Produto } from './../models/produto.model';
 import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import {Produto} from '../models/produto.model'
 
 
 @Injectable({
@@ -14,7 +14,7 @@ import {Produto} from '../models/produto.model'
 export class ProductService {
 
 
-  url: string = "http://localhost:8080/products/"
+  url: string = "http://localhost:8080/products"
 
 
 
@@ -27,9 +27,10 @@ export class ProductService {
 
 
     return this.http.get<Produto[]>(this.url)   
-
    
   }
+
+  
 
   
 }

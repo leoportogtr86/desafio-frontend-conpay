@@ -7,6 +7,11 @@ import { Produto } from './../../models/produto.model';
   templateUrl: './card-product.component.html',
   styleUrls: ['./card-product.component.css']
 })
+
+
+
+
+
 export class CardProductComponent implements OnInit {
 
 
@@ -31,6 +36,8 @@ export class CardProductComponent implements OnInit {
 
       this.produtos = res
     })
+
+    
 
 
 

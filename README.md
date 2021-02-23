@@ -4,7 +4,6 @@
 
 Este projeto foi construído com o objetivo de cumprir o desafio técnico no processo de seleção da empresa [Conpay](https://conpay.com.br/) para a vaga desenvolvedor frontend.
 
-[Especificações do Desafio](/desafio/Desafio%20técnico%20-%20Desenvolvedor%20Front-end.pdf)
 
 
 ## 🛠️ Tecnologias
@@ -61,3 +60,18 @@ Dentro do diretório **backend**, rodar o comando:
 Dentro do diretório **backend**, rodar o comando:
 
     npm start
+
+
+
+## Telas do Sistema
+
+
+
+
+
+
+
+
+
+
+ 

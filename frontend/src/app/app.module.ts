@@ -12,6 +12,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field'
 import {MatSelectModule} from '@angular/material/select';
+import {MatIconModule} from '@angular/material/icon'
 
 import { CheckoutComponent } from './views/checkout/checkout.component'
 import {ProductService} from '../app/services/product.service';
@@ -61,7 +62,8 @@ import { CarrinhoComponent } from './views/carrinho/carrinho.component'
     MatButtonModule,
     MatFormFieldModule,
     MatSelectModule,
-    HttpClientModule
+    HttpClientModule,
+    MatIconModule
   ],
   providers: [ProductService, CarrinhoService, AuthenticationService, AuthorizationService],
   bootstrap: [AppComponent]
