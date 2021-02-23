@@ -26,10 +26,10 @@ export class ProductService {
   getProducts(): Observable<Produto[]> {
 
 
-    return this.http.get<Produto[]>(this.url)
-
-    
+    return this.http.get<Produto[]>(this.url)   
 
    
   }
+
+  
 }

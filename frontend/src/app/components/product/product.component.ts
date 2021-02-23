@@ -25,7 +25,6 @@ export class ProductComponent implements OnInit {
 
     console.log((<HTMLInputElement>res.target).value)
 
-
   }
 
   
