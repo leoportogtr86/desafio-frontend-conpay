@@ -38,9 +38,6 @@ export class CardProductComponent implements OnInit {
       console.log(res)
     })    
 
-
-
-
   }
 
   buscar(res: Event): void{
