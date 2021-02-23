@@ -74,8 +74,9 @@ Dentro do diretório **backend**, rodar o comando:
 
 
 
+## Buscando Produtos
 
 
-
+![](https://github.com/leoportogtr86/desafio-frontend-conpay/blob/master/readme-img/tela.gif)
 
  

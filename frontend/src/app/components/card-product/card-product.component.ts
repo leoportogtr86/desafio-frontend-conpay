@@ -16,7 +16,7 @@ export class CardProductComponent implements OnInit {
 
 
   nomeProduto: string = ''
-  produtoEncontrado: boolean = true
+  produtoEncontrado: boolean = false
 
   
 
