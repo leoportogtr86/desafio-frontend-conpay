@@ -16,6 +16,7 @@
     background-color: #222;
     margin-bottom: 5px;
     z-index: 0;
+    height: 40vh;
 }
 
 
@@ -27,4 +28,10 @@
 .form-field{
 
     margin-left: 20px;
+}
+
+.form-top{
+
+    margin-top: 80px;
+
 }

@@ -26,7 +26,10 @@ import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
 import {CarrinhoService} from './services/carrinho.service'
 import {AuthenticationService} from './services/authentication.service'
-import {AuthorizationService} from './services/authorization.service'
+import {AuthorizationService} from './services/authorization.service';
+import { AprovadaComponent } from './views/aprovada/aprovada.component';
+import { RecusadaComponent } from './views/recusada/recusada.component';
+import { CarrinhoComponent } from './views/carrinho/carrinho.component'
 
 
 
@@ -42,6 +45,9 @@ import {AuthorizationService} from './services/authorization.service'
     ProductComponent,
     CardFormComponent,
     CardProductComponent,
+    AprovadaComponent,
+    RecusadaComponent,
+    CarrinhoComponent,
   ],
   imports: [
     BrowserModule,
