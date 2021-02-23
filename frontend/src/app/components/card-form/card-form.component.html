@@ -4,7 +4,7 @@
     <mat-form-field class="form-field">
 
         <mat-label>Nome completo</mat-label>
-        <input class="nome" matInput placeholder="Nome completo" type="text">
+        <input class="nome" matInput placeholder="Nome completo" type="text" [value]="nome">
 
     </mat-form-field>
 
@@ -13,14 +13,14 @@
         <mat-form-field class="form-field">
 
             <mat-label>CPF/CNPJ</mat-label>
-            <input class="cpf" matInput placeholder="CPF/CNPJ" type="text">
+            <input class="cpf" matInput placeholder="CPF/CNPJ" type="text" [value]="cpfCnpj">
 
         </mat-form-field>
 
         <mat-form-field class="form-field">
 
             <mat-label>Data Nascimento</mat-label>
-            <input class="nascimento" matInput placeholder="Data Nascimento" type="date">
+            <input class="nascimento" matInput placeholder="Data Nascimento" type="date" [value]="dataNascimento">
 
         </mat-form-field>
 
@@ -32,14 +32,14 @@
         <mat-form-field class="form-field">
 
             <mat-label>Email</mat-label>
-            <input class="email" matInput placeholder="Email" type="email">
+            <input class="email" matInput placeholder="Email" type="email" [value]="email">
 
         </mat-form-field>
 
         <mat-form-field class="form-field">
 
             <mat-label>Telefone</mat-label>
-            <input class="telefone" matInput placeholder="Telefone" type="tel">
+            <input class="telefone" matInput placeholder="Telefone" type="tel" [value]="telefone">
 
         </mat-form-field>
 
@@ -52,7 +52,7 @@
         <mat-form-field class="form-field">
 
             <mat-label>Endereço</mat-label>
-            <input class="endereço" matInput placeholder="Endereço" type="text">
+            <input class="endereço" matInput placeholder="Endereço" type="text" [value]="endereco">
 
         </mat-form-field>
 
@@ -74,14 +74,14 @@
         <mat-form-field class="form-field">
 
             <mat-label>Número do cartão</mat-label>
-            <input class="numero-cartao" matInput placeholder="Número do cartão" type="text">
+            <input class="numero-cartao" matInput placeholder="Número do cartão" type="text" [value]="numeroCartao">
 
         </mat-form-field>
 
         <mat-form-field class="form-field">
 
             <mat-label>Validade</mat-label>
-            <input class="validade" matInput placeholder="Validade" type="date">
+            <input class="validade" matInput placeholder="Validade" type="date" [value]="validadeCartao">
 
         </mat-form-field>
 
@@ -93,14 +93,15 @@
         <mat-form-field class="form-field">
 
             <mat-label>Nome impresso no cartão</mat-label>
-            <input class="nome-cartao" matInput placeholder="Nome impresso no cartão" type="text">
+            <input class="nome-cartao" matInput placeholder="Nome impresso no cartão" type="text" [value]="nomeCartao">
 
         </mat-form-field>
 
         <mat-form-field class="form-field">
 
             <mat-label>Código de segurança (CVV)</mat-label>
-            <input class="codigo" matInput placeholder="Código de segurança (CVV)" type="text">
+            <input class="codigo" matInput placeholder="Código de segurança (CVV)" type="text"
+                [value]="codigoSeguranca">
 
         </mat-form-field>
 
@@ -120,8 +121,9 @@
 
 
         </mat-select>
-    </mat-form-field>
+    </mat-form-field><br>
 
 
+    <button class="enviar">Enviar</button>
 
 </div>

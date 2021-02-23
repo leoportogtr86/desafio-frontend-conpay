@@ -30,7 +30,7 @@ import {AuthenticationService} from './services/authentication.service'
 import {AuthorizationService} from './services/authorization.service';
 import { AprovadaComponent } from './views/aprovada/aprovada.component';
 import { RecusadaComponent } from './views/recusada/recusada.component';
-import { CarrinhoComponent } from './views/carrinho/carrinho.component'
+import { CarrinhoComponent } from './views/carrinho/carrinho.component';
 
 
 
