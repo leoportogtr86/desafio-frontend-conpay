@@ -1,4 +1,7 @@
 import { Injectable } from '@angular/core';
+import {HttpClient} from '@angular/common/http'
+
+import {Observable} from 'rxjs'
 
 import {Pedido} from '../models/pedido.model'
 
@@ -7,11 +10,13 @@ import {Pedido} from '../models/pedido.model'
 })
 export class OrdemCompraService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
   
-  efetivarCompra(pedido: Pedido): void{
+  efetivarCompra(pedido: Pedido): Observable<any>{
 
-    console.log('ordem de compra...')
+    console.log(pedido)
+
+    return this.http.post('http://localhost:8080/pedidos', pedido)
     
   }
 }
