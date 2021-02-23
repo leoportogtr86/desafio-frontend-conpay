@@ -16,6 +16,7 @@ export class CardProductComponent implements OnInit {
 
 
   nomeProduto: string = ''
+  produtoEncontrado: boolean = true
 
   
 
@@ -47,6 +48,21 @@ export class CardProductComponent implements OnInit {
 
     this.productService.getProductsByName((<HTMLInputElement>res.target).value).subscribe((res)=>{
       this.produtos = res
+
+      console.log(res.length)
+
+      if(res.length == 0){
+
+        this.produtoEncontrado = !false
+        console.log(this.produtoEncontrado)
+
+
+      } else {
+
+        this.produtoEncontrado = !true
+        console.log(this.produtoEncontrado)
+
+      }
 
 
     })
