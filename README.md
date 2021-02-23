@@ -77,11 +77,5 @@ Dentro do diretório **backend**, rodar o comando:
 
 
 
-![](https://github.com/leoportogtr86/desafio-frontend-conpay/blob/master/frontend/src/assets/gifs/logo.gif)
-
-
-
-
-
 
  
