@@ -21,6 +21,13 @@ export class ProductComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  buscar(res: Event): void{
+
+    console.log((<HTMLInputElement>res.target).value)
+
+
+  }
+
   
 
 
