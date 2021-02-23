@@ -28,4 +28,79 @@ export class CardFormComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  atualizaNome(nome: string): void{
+
+    this.nome = nome
+    console.log(this.nome)
+
+  }
+
+  atualizaCpfCnpj(cpfCnpj: string): void{
+
+    this.cpfCnpj = cpfCnpj
+    console.log(this.cpfCnpj)
+
+  }
+
+  atualizaDataNascimento(data: string): void{
+
+    this.dataNascimento = data
+    console.log(this.dataNascimento)
+
+  }
+
+  atualizaEmail(email: string): void{
+
+    this.email = email
+    console.log(this.email)
+
+  }
+
+  atualizaTelefone(telefone: string): void{
+
+    this.telefone = telefone
+    console.log(this.telefone)
+
+  }
+
+  atualizaEndereco(endereco: string): void{
+
+    this.endereco = endereco
+    console.log(this.endereco)
+
+  }
+
+  atualizaNumeroCartao(numeo: string): void{
+
+    this.numeroCartao = numeo
+    console.log(this.numeroCartao)
+
+  }
+
+  atualizaValidadeCartao(validade: string): void{
+
+    this.validadeCartao = validade
+    console.log(this.validadeCartao)
+
+  }
+
+  atualizaNomeCartao(nome: string): void{
+
+    this.nomeCartao = nome
+    console.log(this.nomeCartao)
+
+  }
+
+  atualizaCodigoSeguranca(codigo: string): void{
+
+    this.codigoSeguranca = codigo
+    console.log(this.codigoSeguranca)
+
+  }
+
+
+
+
+
+
 }

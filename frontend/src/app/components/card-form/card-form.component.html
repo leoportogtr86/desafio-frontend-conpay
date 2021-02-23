@@ -4,7 +4,8 @@
     <mat-form-field class="form-field">
 
         <mat-label>Nome completo</mat-label>
-        <input class="nome" matInput placeholder="Nome completo" type="text" [value]="nome">
+        <input class="nome" matInput placeholder="Nome completo" type="text" [value]="nome" #inputNome
+            (input)="atualizaNome(inputNome.value)">
 
     </mat-form-field>
 
@@ -13,14 +14,16 @@
         <mat-form-field class="form-field">
 
             <mat-label>CPF/CNPJ</mat-label>
-            <input class="cpf" matInput placeholder="CPF/CNPJ" type="text" [value]="cpfCnpj">
+            <input class="cpf" matInput placeholder="CPF/CNPJ" type="text" [value]="cpfCnpj" #inputCpfCnpj
+                (input)="atualizaCpfCnpj(inputCpfCnpj.value)">
 
         </mat-form-field>
 
         <mat-form-field class="form-field">
 
             <mat-label>Data Nascimento</mat-label>
-            <input class="nascimento" matInput placeholder="Data Nascimento" type="date" [value]="dataNascimento">
+            <input class="nascimento" matInput placeholder="Data Nascimento" type="date" [value]="dataNascimento"
+                (input)="atualizaDataNascimento(inputDataNascimento.value)" #inputDataNascimento>
 
         </mat-form-field>
 
@@ -32,14 +35,16 @@
         <mat-form-field class="form-field">
 
             <mat-label>Email</mat-label>
-            <input class="email" matInput placeholder="Email" type="email" [value]="email">
+            <input class="email" matInput placeholder="Email" type="email" [value]="email" #inputEmail
+                (input)="atualizaEmail(inputEmail.value)">
 
         </mat-form-field>
 
         <mat-form-field class="form-field">
 
             <mat-label>Telefone</mat-label>
-            <input class="telefone" matInput placeholder="Telefone" type="tel" [value]="telefone">
+            <input class="telefone" matInput placeholder="Telefone" type="tel" [value]="telefone" #inputTelefone
+                (input)="atualizaTelefone(inputTelefone.value)">
 
         </mat-form-field>
 
@@ -52,7 +57,8 @@
         <mat-form-field class="form-field">
 
             <mat-label>Endereço</mat-label>
-            <input class="endereço" matInput placeholder="Endereço" type="text" [value]="endereco">
+            <input class="endereço" matInput placeholder="Endereço" type="text" [value]="endereco" #inputEndereco
+                (input)="atualizaEndereco(inputEndereco.value)">
 
         </mat-form-field>
 
@@ -74,14 +80,16 @@
         <mat-form-field class="form-field">
 
             <mat-label>Número do cartão</mat-label>
-            <input class="numero-cartao" matInput placeholder="Número do cartão" type="text" [value]="numeroCartao">
+            <input class="numero-cartao" matInput placeholder="Número do cartão" type="text" [value]="numeroCartao"
+                #inputNumeroCartao (input)="atualizaNumeroCartao(inputNumeroCartao.value)">
 
         </mat-form-field>
 
         <mat-form-field class="form-field">
 
             <mat-label>Validade</mat-label>
-            <input class="validade" matInput placeholder="Validade" type="date" [value]="validadeCartao">
+            <input class="validade" matInput placeholder="Validade" type="date" [value]="validadeCartao"
+                #inputValidadeCartao (input)="atualizaValidadeCartao(inputValidadeCartao.value)">
 
         </mat-form-field>
 
@@ -93,15 +101,16 @@
         <mat-form-field class="form-field">
 
             <mat-label>Nome impresso no cartão</mat-label>
-            <input class="nome-cartao" matInput placeholder="Nome impresso no cartão" type="text" [value]="nomeCartao">
+            <input class="nome-cartao" matInput placeholder="Nome impresso no cartão" type="text" [value]="nomeCartao"
+                #inputNomeCartao (input)="atualizaNomeCartao(inputNomeCartao.value)">
 
         </mat-form-field>
 
         <mat-form-field class="form-field">
 
             <mat-label>Código de segurança (CVV)</mat-label>
-            <input class="codigo" matInput placeholder="Código de segurança (CVV)" type="text"
-                [value]="codigoSeguranca">
+            <input class="codigo" matInput placeholder="Código de segurança (CVV)" type="text" [value]="codigoSeguranca"
+                #inputCodigoSeguranca (input)="atualizaCodigoSeguranca(inputCodigoSeguranca.value)">
 
         </mat-form-field>
 
