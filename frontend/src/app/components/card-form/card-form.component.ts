@@ -36,6 +36,7 @@ export class CardFormComponent implements OnInit {
 
     //a logica de validacao dos campos sera contruida a partir desses valores
   
+    //obs: pesquisar regex
   
 
   constructor() { }
@@ -68,6 +69,8 @@ export class CardFormComponent implements OnInit {
 
     this.cpfCnpj = cpfCnpj
     console.log(this.cpfCnpj)
+
+    
 
   }
 
