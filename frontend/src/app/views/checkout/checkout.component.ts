@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import {OrdemCompraService} from '../../services/ordem-compra.service'
+
 @Component({
   selector: 'app-checkout',
   templateUrl: './checkout.component.html',
@@ -8,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class CheckoutComponent implements OnInit {
 
 
-  constructor() { }
+  constructor(private ordem: OrdemCompraService) { }
 
   ngOnInit(): void {
   }

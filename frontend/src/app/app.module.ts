@@ -31,6 +31,7 @@ import {AuthorizationService} from './services/authorization.service';
 import { AprovadaComponent } from './views/aprovada/aprovada.component';
 import { RecusadaComponent } from './views/recusada/recusada.component';
 import { CarrinhoComponent } from './views/carrinho/carrinho.component';
+import {OrdemCompraService} from './services/ordem-compra.service'
 
 
 
@@ -65,7 +66,7 @@ import { CarrinhoComponent } from './views/carrinho/carrinho.component';
     HttpClientModule,
     MatIconModule
   ],
-  providers: [ProductService, CarrinhoService, AuthenticationService, AuthorizationService],
+  providers: [ProductService, CarrinhoService, AuthenticationService, AuthorizationService, OrdemCompraService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

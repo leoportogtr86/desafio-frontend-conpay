@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+
 import {Cliente} from '../../models/cliente.model'
+import {OrdemCompraService} from '../../services/ordem-compra.service'
+import {Pedido} from '../../models/pedido.model'
+
 
 @Component({
   selector: 'app-card-form',
@@ -37,11 +41,31 @@ export class CardFormComponent implements OnInit {
     //a logica de validacao dos campos sera contruida a partir desses valores
   
     //obs: pesquisar regex
+
+    pedido: Pedido = {
+
+
+        nome: '',
+        cpfCnpj: '',
+        dataNascimento:'',
+        email:'',
+        telefone:'',
+        endereco: '',
+        numeroCartao: '',
+        validadeCartao: '',
+        nomeCartao: '',
+        codigoSeguranca: ''
+
+    }
+
+    
   
 
-  constructor() { }
+  constructor(private ordem: OrdemCompraService) { }
 
   ngOnInit(): void {
+
+    // this.ordem.efetivarCompra()
   }
 
   atualizaNome(nome: string): void{
@@ -127,6 +151,31 @@ export class CardFormComponent implements OnInit {
 
     this.codigoSeguranca = codigo
     console.log(this.codigoSeguranca)
+
+  }
+
+
+
+  confirmarCompra(): void{
+
+    this.pedido = {
+
+        nome: this.nome,
+        cpfCnpj: this.cpfCnpj,
+        dataNascimento: this.dataNascimento,
+        email: this.email,
+        telefone: this.telefone,
+        endereco: this.endereco,
+        numeroCartao: this.numeroCartao,
+        validadeCartao: this.validadeCartao,
+        nomeCartao: this.nome,
+        codigoSeguranca: this.codigoSeguranca
+    }
+
+
+
+    this.ordem.efetivarCompra(this.pedido)
+
 
   }
 
