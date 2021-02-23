@@ -20,6 +20,21 @@ export class CardFormComponent implements OnInit {
     validadeCartao: string = ''
     nomeCartao: string = ''
     codigoSeguranca: string = ''
+
+    //controles de validação dos campos
+
+
+    nomeValido: boolean = false
+    cpfCnpjValido: boolean = false
+    dataNascimentoValido: boolean = false
+    emailValidoValido: boolean = false
+    enderecoValido: boolean = false
+    numeroCartaoValido: boolean = false
+    validadeCartaoValido: boolean = false
+    nomeCartaoValido: boolean = false
+    codigoSegurancaValido: boolean = false
+
+    //a logica de validacao dos campos sera contruida a partir desses valores
   
   
 
@@ -32,6 +47,20 @@ export class CardFormComponent implements OnInit {
 
     this.nome = nome
     console.log(this.nome)
+
+    if (this.nome.length > 0){
+
+      this.nomeValido = true
+      console.log(this.nomeValido)
+    
+    } else {
+
+      this.nomeValido = false
+      console.log(this.nomeValido)
+
+    }
+
+    //logica para validacao de campos...deve ser criada para cada campo do formulario
 
   }
 
